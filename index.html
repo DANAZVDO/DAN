@@ -15,17 +15,17 @@
       --s1:          #0A0A20;
       --s2:          #0E0E2A;
       --s3:          #14143A;
-      --ruby:        #DC2626;
-      --ruby-b:      #EF4444;
-      --ruby-d:      #991B1B;
-      --ruby-glow:   rgba(220,38,38,.18);
+      --gold:        #A68A3C;
+      --gold-b:      #C4A040;
+      --gold-d:      #6B5A2E;
+      --gold-glow:   rgba(166,138,60,.18);
       --gold:        #A68A3C;
       --gold-d:      #6B5A2E;
       --white:       #F0EEE4;
       --text:        #9090A0;
       --muted:       #F0EEE4;
       --border:      rgba(240,238,228,.06);
-      --border-ruby: rgba(220,38,38,.25);
+      --border-gold: rgba(166,138,60,.25);
     }
 
     html { scroll-behavior: smooth; }
@@ -45,7 +45,7 @@
       font-size: .6rem;
       letter-spacing: .32em;
       text-transform: uppercase;
-      color: var(--ruby-b);
+      color: var(--gold-b);
       display: block;
     }
     .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
@@ -74,7 +74,7 @@
     }
     .nav.scrolled {
       background: rgba(7,7,7,.96);
-      border-color: var(--border-ruby);
+      border-color: var(--border-gold);
       backdrop-filter: blur(12px);
     }
     .nav-logo img { height: 32px; display: block; }
@@ -102,11 +102,11 @@
       text-transform: uppercase;
       color: var(--white) !important;
       text-decoration: none;
-      border: 1px solid var(--ruby);
+      border: 1px solid var(--gold);
       padding: 9px 22px;
       transition: background .25s, color .25s !important;
     }
-    .nav-cta:hover { background: var(--ruby) !important; }
+    .nav-cta:hover { background: var(--gold) !important; }
     .nav-menu-btn {
       display: none;
       background: none;
@@ -164,7 +164,7 @@
     .hero-h1 em {
       font-style: italic;
       font-weight: 700;
-      color: var(--ruby-b);
+      color: var(--gold-b);
     }
     .hero-benefits {
       display: flex;
@@ -183,7 +183,7 @@
       align-items: center;
       gap: 8px;
     }
-    .hero-benefit::before { content: ''; width: 4px; height: 4px; background: var(--ruby); border-radius: 50%; }
+    .hero-benefit::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; }
     .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
     .btn {
       display: inline-flex;
@@ -200,11 +200,11 @@
       cursor: pointer;
       border: none;
     }
-    .btn-ruby {
-      background: var(--ruby);
+    btn-gold {
+      background: var(--gold);
       color: var(--white);
     }
-    .btn-ruby:hover { background: var(--ruby-b); transform: translateY(-2px); box-shadow: 0 8px 28px var(--ruby-glow); }
+    btn-gold:hover { background: var(--gold-b); transform: translateY(-2px); box-shadow: 0 8px 28px var(--gold-glow); }
     .btn-outline {
       background: transparent;
       color: var(--gold);
@@ -225,7 +225,7 @@
     .hero-scroll-line {
       width: 1px;
       height: 48px;
-      background: linear-gradient(to bottom, var(--ruby-d), transparent);
+      background: linear-gradient(to bottom, var(--gold-d), transparent);
       animation: scrollLine 2s ease-in-out infinite;
     }
     .hero-scroll-text {
@@ -241,9 +241,9 @@
     .marquee-strip {
       overflow: hidden;
       padding: 18px 0;
-      background: var(--ruby-d);
-      border-top: 1px solid var(--ruby);
-      border-bottom: 1px solid var(--ruby);
+      background: var(--gold-d);
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
       user-select: none;
     }
     .marquee-track {
@@ -280,7 +280,7 @@
       line-height: 1.25;
       margin: 20px 0 28px;
     }
-    .about-manifesto em { font-style: italic; color: var(--ruby-b); }
+    .about-manifesto em { font-style: italic; color: var(--gold-b); }
     .about-body { color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 32px; }
     .about-body strong { color: var(--text); font-weight: 500; }
     .about-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
@@ -288,15 +288,15 @@
       background: var(--s2);
       padding: 32px 24px;
       text-align: center;
-      border-top: 2px solid var(--ruby-d);
+      border-top: 2px solid var(--gold-d);
       transition: border-color .3s;
     }
-    .stat:hover { border-color: var(--ruby-b); }
+    .stat:hover { border-color: var(--gold-b); }
     .stat-num {
       font-family: 'Playfair Display', serif;
       font-size: 2.8rem;
       font-weight: 900;
-      color: var(--ruby-b);
+      color: var(--gold-b);
       line-height: 1;
       margin-bottom: 6px;
     }
@@ -319,7 +319,7 @@
       line-height: 1.1;
       margin-top: 16px;
     }
-    .services-title em { font-style: italic; color: var(--ruby-b); }
+    .services-title em { font-style: italic; color: var(--gold-b); }
 
     .service-list { border-top: 1px solid var(--border); }
 
@@ -340,7 +340,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.8rem;
       font-weight: 700;
-      color: var(--ruby-d);
+      color: var(--gold-d);
       line-height: 1;
       transition: color .25s;
     }
@@ -364,18 +364,18 @@
     .service-toggle {
       width: 36px;
       height: 36px;
-      border: 1px solid var(--border-ruby);
+      border: 1px solid var(--border-gold);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--ruby-b);
+      color: var(--gold-b);
       font-size: .9rem;
       transition: background .25s, transform .35s;
       flex-shrink: 0;
     }
-    details[open] .service-toggle { background: var(--ruby-d); transform: rotate(45deg); }
-    details[open] .service-num    { color: var(--ruby-b); }
-    details[open] .service-name   { color: var(--ruby-b); }
+    details[open] .service-toggle { background: var(--gold-d); transform: rotate(45deg); }
+    details[open] .service-num    { color: var(--gold-b); }
+    details[open] .service-name   { color: var(--gold-b); }
     .service-body {
       display: grid;
       grid-template-columns: 64px 1fr;
@@ -399,7 +399,7 @@
       gap: 8px;
       line-height: 1.5;
     }
-    .service-bullets li::before { content: '—'; color: var(--ruby-d); font-size: .7rem; flex-shrink: 0; margin-top: 1px; }
+    .service-bullets li::before { content: '—'; color: var(--gold-d); font-size: .7rem; flex-shrink: 0; margin-top: 1px; }
 
     /* ── PLANS ────────────────────────────────────────────── */
     .plans {
@@ -426,7 +426,7 @@
       line-height: 1.1;
       margin-top: 16px;
     }
-    .plans-title em { font-style: italic; color: var(--ruby-b); }
+    .plans-title em { font-style: italic; color: var(--gold-b); }
     .plans-sub { color: var(--muted); font-size: .9rem; margin-top: 12px; }
 
     .plans-grid {
@@ -454,20 +454,20 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 2px;
-      background: var(--ruby-d);
+      background: var(--gold-d);
       transition: background .3s;
     }
-    .plan-card:hover { border-color: var(--border-ruby); }
-    .plan-card:hover::before { background: var(--ruby-b); }
+    .plan-card:hover { border-color: var(--border-gold); }
+    .plan-card:hover::before { background: var(--gold-b); }
     .plan-card.is-featured {
       background: linear-gradient(160deg, #120808 0%, #1c0c0c 100%);
-      border-color: var(--ruby-d);
+      border-color: var(--gold-d);
     }
-    .plan-card.is-featured::before { background: var(--ruby); }
+    .plan-card.is-featured::before { background: var(--gold); }
     .plan-badge {
       position: absolute;
       top: -1px; left: 50%; transform: translateX(-50%);
-      background: var(--ruby);
+      background: var(--gold);
       color: var(--white);
       font-family: 'Cinzel', serif;
       font-size: .52rem;
@@ -509,7 +509,7 @@
     }
     .plan-items li::before {
       content: '✦';
-      color: var(--ruby-d);
+      color: var(--gold-d);
       font-size: .5rem;
       flex-shrink: 0;
       margin-top: 4px;
@@ -525,15 +525,15 @@
       text-transform: uppercase;
       text-decoration: none;
       transition: all .28s;
-      border: 1px solid var(--ruby-d);
-      color: var(--ruby-b);
+      border: 1px solid var(--gold-d);
+      color: var(--gold-b);
     }
     .plan-cta:hover, .plan-card.is-featured .plan-cta {
-      background: var(--ruby);
+      background: var(--gold);
       color: var(--white);
-      border-color: var(--ruby);
+      border-color: var(--gold);
     }
-    .plan-card.is-featured .plan-cta:hover { background: var(--ruby-b); }
+    .plan-card.is-featured .plan-cta:hover { background: var(--gold-b); }
 
     /* ── PROCESS ──────────────────────────────────────────── */
     .process {
@@ -549,7 +549,7 @@
       line-height: 1.1;
       margin-top: 16px;
     }
-    .process-title em { font-style: italic; color: var(--ruby-b); }
+    .process-title em { font-style: italic; color: var(--gold-b); }
     .process-steps {
       display: grid;
       grid-template-columns: repeat(4,1fr);
@@ -569,12 +569,12 @@
       background: var(--border);
       transition: background .3s;
     }
-    .process-step:hover::after { background: var(--ruby); }
+    .process-step:hover::after { background: var(--gold); }
     .process-big-num {
       font-family: 'Playfair Display', serif;
       font-size: 5.5rem;
       font-weight: 900;
-      color: rgba(220,38,38,.1);
+      color: rgba(166,138,60,.1);
       line-height: 1;
       margin-bottom: 16px;
       letter-spacing: -.04em;
@@ -585,7 +585,7 @@
       font-weight: 700;
       letter-spacing: .2em;
       text-transform: uppercase;
-      color: var(--ruby-b);
+      color: var(--gold-b);
       margin-bottom: 12px;
     }
     .process-step-desc { font-size: .88rem; color: var(--muted); line-height: 1.7; }
@@ -594,8 +594,8 @@
     .guarantee {
       padding: 80px 0;
       background: var(--s1);
-      border-top: 1px solid var(--border-ruby);
-      border-bottom: 1px solid var(--border-ruby);
+      border-top: 1px solid var(--border-gold);
+      border-bottom: 1px solid var(--border-gold);
     }
     .guarantee-inner {
       display: flex;
@@ -606,10 +606,10 @@
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
       font-weight: 900;
-      color: var(--ruby-b);
+      color: var(--gold-b);
       line-height: 1;
       flex-shrink: 0;
-      border: 1px solid var(--ruby-d);
+      border: 1px solid var(--gold-d);
       width: 88px;
       height: 88px;
       display: flex;
@@ -655,13 +655,13 @@
       line-height: 1.1;
       margin: 16px 0 16px;
     }
-    .cta-title em { font-style: italic; color: var(--ruby-b); }
+    .cta-title em { font-style: italic; color: var(--gold-b); }
     .cta-sub { color: var(--muted); font-size: 1rem; max-width: 480px; margin: 0 auto 44px; line-height: 1.8; }
     .cta-wa {
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      background: var(--ruby);
+      background: var(--gold);
       color: var(--white);
       padding: 18px 44px;
       font-family: 'Cinzel', serif;
@@ -672,7 +672,7 @@
       text-decoration: none;
       transition: all .28s;
     }
-    .cta-wa:hover { background: var(--ruby-b); transform: translateY(-2px); box-shadow: 0 12px 36px var(--ruby-glow); }
+    .cta-wa:hover { background: var(--gold-b); transform: translateY(-2px); box-shadow: 0 12px 36px var(--gold-glow); }
     .cta-wa svg { width: 20px; height: 20px; }
     .cta-note { margin-top: 20px; font-size: .8rem; color: var(--muted); }
     .cta-note a { color: var(--gold-d); text-decoration: none; }
@@ -681,7 +681,7 @@
     /* ── FOOTER ──────────────────────────────────────────── */
     footer {
       background: var(--bg);
-      border-top: 1px solid var(--border-ruby);
+      border-top: 1px solid var(--border-gold);
       padding: 52px 40px 36px;
     }
     .footer-inner {
@@ -769,7 +769,7 @@
         padding: 40px;
         gap: 24px;
         align-items: flex-start;
-        border-top: 1px solid var(--border-ruby);
+        border-top: 1px solid var(--border-gold);
         backdrop-filter: blur(12px);
       }
       .nav-links.open a { font-size: .75rem; }
@@ -800,7 +800,7 @@
 /* cursor glow */ .cursor-glow{pointer-events:none;position:fixed;z-index:9998;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.035) 0%,transparent 70%);transform:translate(-50%,-50%);opacity:0;transition:opacity .4s ease}
 /* easing */ :root{--ease-out:cubic-bezier(0.16,1,0.3,1)}
 
-/* magnetic buttons */ .btn-ruby,.btn-gold,.btn-outline-w,.btn-outline-g{transition:transform .2s ease,opacity .2s ease,box-shadow .2s ease}.btn-ruby:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(220,38,38,.25)}</style>
+/* magnetic buttons */ btn-gold,.btn-gold,.btn-outline-w,.btn-outline-g{transition:transform .2s ease,opacity .2s ease,box-shadow .2s ease}btn-gold:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(166,138,60,.25)}</style>
 </head>
 <body>
 <canvas id="bgCanvas" style="position:fixed;top:0;left:0;z-index:0;pointer-events:none;opacity:.28"></canvas>
@@ -842,7 +842,7 @@
       <span class="hero-benefit">Sem Incomodações</span>
     </div>
     <div class="hero-actions" data-reveal>
-      <a class="btn btn-ruby" href="https://wa.me/5551994798139?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20D1%20Consulting." target="_blank" rel="noopener">
+      <a class="btn btn-gold" href="https://wa.me/5551994798139?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20D1%20Consulting." target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Falar com especialista
       </a>
