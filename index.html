@@ -137,7 +137,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('assets/bg-hero.jpg');
+      background-image: url('assets/bg-hero.jpg.jpeg');
       background-size: cover;
       background-position: center;
       opacity: .28;
@@ -200,11 +200,12 @@
       cursor: pointer;
       border: none;
     }
-    btn-gold {
+    .btn-gold {
       background: var(--gold);
-      color: var(--white);
+      color: #1a1a0a;
+      font-weight: 600;
     }
-    btn-gold:hover { background: var(--gold-b); transform: translateY(-2px); box-shadow: 0 8px 28px var(--gold-glow); }
+    .btn-gold:hover { background: var(--gold-b); color: #1a1a0a; transform: translateY(-2px); box-shadow: 0 8px 28px var(--gold-glow); }
     .btn-outline {
       background: transparent;
       color: var(--gold);
@@ -411,7 +412,7 @@
     .plans-bg {
       position: absolute;
       inset: 0;
-      background-image: url('assets/bg-dark.jpg');
+      background-image: url('assets/bg-dark.jpg.jpeg');
       background-size: cover;
       background-position: center;
       opacity: .06;
@@ -636,7 +637,7 @@
     .cta-bg {
       position: absolute;
       inset: 0;
-      background-image: url('assets/bg-cta.jpg');
+      background-image: url('assets/bg-cta.jpg.jpeg');
       background-size: cover;
       background-position: center;
       opacity: .14;
@@ -800,7 +801,7 @@
 /* cursor glow */ .cursor-glow{pointer-events:none;position:fixed;z-index:9998;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.035) 0%,transparent 70%);transform:translate(-50%,-50%);opacity:0;transition:opacity .4s ease}
 /* easing */ :root{--ease-out:cubic-bezier(0.16,1,0.3,1)}
 
-/* magnetic buttons */ btn-gold,.btn-gold,.btn-outline-w,.btn-outline-g{transition:transform .2s ease,opacity .2s ease,box-shadow .2s ease}btn-gold:hover,.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(166,138,60,.25)}</style>
+/* magnetic buttons */ .btn-gold,.btn-outline-w,.btn-outline-g{transition:transform .2s ease,opacity .2s ease,box-shadow .2s ease}.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(166,138,60,.25)}</style>
 </head>
 <body>
 <canvas id="bgCanvas" style="position:fixed;top:0;left:0;z-index:0;pointer-events:none;opacity:.28"></canvas>
