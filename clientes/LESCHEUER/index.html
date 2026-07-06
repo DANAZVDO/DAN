@@ -400,10 +400,8 @@
 .cursor-glow{pointer-events:none;position:fixed;z-index:9998;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.04) 0%,transparent 70%);transform:translate(-50%,-50%);opacity:0;transition:opacity .4s ease}
 .btn-gold,.btn-outline,a[href*="wa.me"]{transition:transform .2s ease,box-shadow .2s ease}
 .btn-gold:hover,.btn-outline:hover,a[href*="wa.me"]:hover{transform:translateY(-2px)}
-/* bg cream sections - dot pattern */ .bg-cream{background-color:var(--cream);background-image:radial-gradient(rgba(201,168,76,.1) 1.5px,transparent 1.5px)!important;background-size:20px 20px!important}
-/* bg navy sections - gradient with glow */ .bg-navy-900{background:linear-gradient(150deg,#0c1628 0%,#152040 40%,#0c1628 100%)!important}
-.bg-navy-900::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 20% 20%,rgba(201,168,76,.07) 0%,transparent 50%),radial-gradient(ellipse 60% 60% at 80% 80%,rgba(201,168,76,.05) 0%,transparent 50%);pointer-events:none;z-index:0}
-.bg-navy-900>.container{position:relative;z-index:1}
+/* bg cream sections - dot pattern overlay */ .bg-cream{position:relative}.bg-cream::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(rgba(201,168,76,.12) 1.5px,transparent 1.5px);background-size:20px 20px}.bg-cream>.container,.bg-cream>*{position:relative;z-index:1}
+/* bg navy sections - gradient with glow orbs */ .bg-navy-900{background:linear-gradient(150deg,#0c1628 0%,#152040 40%,#0c1628 100%)!important}.bg-navy-900::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 20% 20%,rgba(201,168,76,.07) 0%,transparent 50%),radial-gradient(ellipse 60% 60% at 80% 80%,rgba(201,168,76,.05) 0%,transparent 50%);pointer-events:none;z-index:0}.bg-navy-900>.container{position:relative;z-index:1}
 </style>
 </head>
 <body>
